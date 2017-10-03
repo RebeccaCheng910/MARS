@@ -1,0 +1,159 @@
+
+/******************************************************************
+*******************************************************************
+
+Description: MARS - Your Moving Companion
+                  
+*******************************************************************
+******************************************************************/
+
+/******************************************************************
+    General 
+******************************************************************/
+
+header {
+  margin: 0;
+  padding: 1em;
+  color: #fff;
+  text-align: center;
+  background-color: #222;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #ccc;
+}
+
+h1 {
+  margin: 0 0 8px 0;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 2.4em;
+  letter-spacing: 1px;
+}
+
+h2 {
+  margin: 0 0 16px 0;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+a, a:link, a:visited  {
+  color: #000;
+  text-decoration: none;
+}
+
+a:active, a:hover {
+  text-decoration: underline;
+}
+
+li {
+  padding: 4px;
+}
+
+/******************************************************************
+    Boxes
+******************************************************************/
+#logo {
+  color: #fff;
+}
+
+#logo:hover {
+  text-decoration: none;
+}
+
+.wrapper {
+  margin: 16px 64px;
+}
+
+.address-box h2 {
+  margin: 0;
+  padding: 16px;
+}
+
+.content-box {
+  margin: 0 auto 16px auto;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  justify-content: space-around;
+  background-color: rgba(255,255,255,0.7);
+}
+
+.street, .city, .submit-btn {
+  display: inline-block;
+}
+
+.city, .submit-box {
+  display: inline-block;
+  margin: 0 0 0 16px;
+}
+
+.bgimg {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  z-index:-1;
+  opacity:1;
+}
+
+/******************************************************************
+    Sections
+******************************************************************/
+
+.wikipedia-container {
+  width: 20%;
+  padding: 16px;
+}
+
+.nytimes-container {
+  width: 65%;
+  padding: 16px;
+}
+
+.article-list {
+  margin: 0;
+  padding: 0;
+}
+
+/******************************************************************
+    Responsive
+******************************************************************/
+
+@media (max-width: 975px) {
+  #wikipedia-links {
+    list-style-type: none;
+    padding: 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .wikipedia-container {
+    width: 100%;
+    padding:16px;
+  }
+
+  .nytimes-container {
+    width: 100%;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 580px) {
+  .street-box {
+    display: block;
+  }
+
+  .city-box {
+    display: block;
+    margin: 0;
+  }
+
+  .submit-box{
+    display: inline-block;
+    margin: 0;
+  }
+}
